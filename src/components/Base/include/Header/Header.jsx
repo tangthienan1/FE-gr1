@@ -52,12 +52,6 @@ const Header = (props) => {
                         <>
                             <div className=".d-sm-none .d-md-block">
                                 <Banner />
-                                <div className="searchbar-style">
-                                    <Form inline>
-                                        <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
-                                        <Button type="submit">Submit</Button>
-                                    </Form>
-                                </div>
                             </div>
                         </>
                         : null
