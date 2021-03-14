@@ -1,3 +1,16 @@
+.footer-padding {
+    padding-top: 35px;
+}
+
+.main-footer {
+    color: white;
+    background-color: #66ABC8;
+    padding-top: 35px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 .footer-bottom {
     color: white;
     background-color: #6893B7;
@@ -7,11 +20,3 @@
     width: 100%;
 }
 
-.main-footer {
-    color: white;
-    background-color: #66ABC8;
-    padding-top: 2em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
