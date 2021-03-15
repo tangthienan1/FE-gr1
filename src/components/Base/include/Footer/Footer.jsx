@@ -1,5 +1,4 @@
 import React from 'react'
-import SocialButtonsContainer from 'react-social-media-buttons';
 import './Footer.css'
 
 function Footer() {

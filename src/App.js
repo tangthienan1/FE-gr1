@@ -1,6 +1,6 @@
 import './App.css';
+import RouteWay from './config/Route'
 import Base from './components/Base';
-import RouteWay from './config/route';
 
 function App() {
   return (
