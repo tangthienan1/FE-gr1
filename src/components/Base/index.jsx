@@ -1,8 +1,13 @@
 import React from 'react';
+import Footer from './include/Footer/Footer';
+import Header from './include/Header/Header';
 
-function Base(props) {
+function Base({children}){
     return <>
-      /** Để mấy cái side bar footer hdeader dô */  
+      <Header>
+        {children}
+      </Header>
+      <Footer />
     </>
 }
 
