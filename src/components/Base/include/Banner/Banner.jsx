@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component } from 'react';
 import { UncontrolledCarousel } from 'reactstrap';
 import banner1 from './Images/banner1.png'
 import banner2 from './Images/banner2.png'

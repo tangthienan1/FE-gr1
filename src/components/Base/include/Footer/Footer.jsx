@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="footer-padding">
             <div className="main-footer">
-                <div className="col-12">
+                <div className="container">
                     <div className="row align-items-start">
                         <div className="col-sm text-left mx-auto">
                             <h4>HÀ NỘI</h4>
@@ -42,28 +42,18 @@ function Footer() {
                             <h4>CẦN THƠ</h4>
                             <hr />
                             <ul className="list-unstyled">
-                                <li>ĐẠI HỌC GREENWICH </li>
+                                <li>ĐẠI HỌC GREENWICH (VIỆT NAM)</li>
                                 <li>Số 160 đường 30/4, phường An phú, quận Ninh Kiều - TP. Cần Thơ</li>
                                 <li>Điện thoại: 0292.3512.369</li>
                                 <li>Hotline: 0968.670.804 | 0936.600.861</li>
                             </ul>
                         </div>
-                        <div className="col-xs-1" align="center">
-                            <h4>FOLLOW US</h4>
-                            <hr />
-                            <SocialButtonsContainer
-                                links={['https://www.facebook.com/GreenwichVietnam/', 'https://twitter.com/uniofgreenwich', 'https://www.instagram.com/universityofgreenwichvn/']}
-                                buttonStyle={{ margin: '8px 6px', backgroundColor: '#006893', borderRadius: '50%' }}
-                                iconStyle={{ color: '#ffffff' }}
-                                openNewTab={true}
-                            />
-                        </div>
                     </div>
                     <hr />
                     <div className="footer-bottom">
-                        <p className="footer">
+                        <p className="col-sm text-left mx-auto">
                             &copy;{new Date().getFullYear()} CMS Greenwich Magazine System - All Rights Reserved
-                        </p>
+                    </p>
                     </div>
                 </div>
             </div>

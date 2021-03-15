@@ -18,6 +18,7 @@ import {
     FormControl,
     Button,
 } from 'react-bootstrap';
+import './Header.css';
 
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -44,16 +45,19 @@ const Header = (props) => {
                     </Nav>
                 </Collapse>
             </Navbar>
+
             <Media query='(min-width: 547px)'>
                 {matches => {
                     return matches ?
                         <>
                             <div className=".d-sm-none .d-md-block">
                                 <Banner />
-                                <Form inline className="p-4">
-                                    <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
-                                    <Button type="submit">Go</Button>
-                                </Form>
+                                <div className="searchbar-style">
+                                    <Form inline>
+                                        <FormControl type="text" placeholder="Search" className=" mr-sm-2" />
+                                        <Button type="submit">Submit</Button>
+                                    </Form>
+                                </div>
                             </div>
                         </>
                         : null
