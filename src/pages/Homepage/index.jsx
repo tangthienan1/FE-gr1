@@ -7,8 +7,8 @@ import {
 import Base from '../../components/Base';
 import Gallery from '../../components/Base/include/Gallery';
 import SearchBar from '../../components/Base/include/Searchbar';
-import Contents from '../../components/Pagination/Contents';
-import Pagination from '../../components/Pagination/Pagination';
+import Contents from '../../components/Base/include/Pagination/Contents';
+import Pagination from '../../components/Base/include/Pagination/Pagination';
 import './index.css';
 
 const Homepage = () => {

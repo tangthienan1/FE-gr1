@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import RouteWay from './config/Route'
+import RouteWay from './config/route'
 import Base from './components/Base';
 
 function App() {
