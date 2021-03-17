@@ -23,7 +23,7 @@ input, button{
 
 form{
   display: block;
-  position: relative;
+  
 }
 
 form:after{
