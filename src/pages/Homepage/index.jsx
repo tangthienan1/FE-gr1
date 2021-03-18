@@ -35,7 +35,7 @@ const Homepage = () => {
 
 
     return (
-        <><Base>
+        <Base>
             <div className="padding-bottom">
                 <SearchBar />
             </div>
@@ -52,7 +52,7 @@ const Homepage = () => {
                 <Gallery />
             </div>
         </Base>
-        </>
+        
     )
 }
 

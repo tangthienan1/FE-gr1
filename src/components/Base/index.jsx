@@ -2,15 +2,14 @@ import React from 'react';
 import Footer from './include/Footer/Footer';
 import Header from './include/Header/Header';
 
-function Base({children}){
-    return <>
-      <Header>
+function Base({ children }) {
+  return <>
+    <Header />
+      <div className="container-fluid">
         {children}
-      </Header>
-      <Footer />
-    </>
+      </div>
+    <Footer />
+  </>
 }
 
 export default Base;
-
-

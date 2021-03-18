@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import RouteWay from './config/route'
-import Base from './components/Base';
+import RouteWay from './config/route';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
     <div className="App">
       <RouteWay>
-        <Base />
+        
       </RouteWay>
     </div>
   );
