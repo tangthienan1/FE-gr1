@@ -13,7 +13,7 @@ import Footer from '../../components/Base/include/Footer/Footer';
 import Gallery from '../../components/Base/include/Gallery';
 import Header from '../../components/Base/include/Header/Header';
 
-class Home extends Component {
+class HomePage extends Component {
     constructor(props) {
         super(props);
 
@@ -116,4 +116,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default HomePage;

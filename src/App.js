@@ -1,18 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-import RouteWay from './config/Route'
-import Base from './components/Base';
-import Signin from './components/Login/signin';
 import './components/Login/index.css';
+import { authenticate } from './api/Login/authenticate';
+import { Redirect, Route, Router, Switch } from 'react-router';
+import Loginform from './components/Login/login';
+import HomePage from './pages/Homepage';
+import routeConfig from './config/route.js';
 
 
 function App() {
-  return (
-    <div className="App">
-     
-     <Signin></Signin>
+  const ProtectRoute = ({ component: Component, ...rest }) => (
+    <Route {...rest} render={(props) => (
+      authenticate() ? <Component {...props} /> : <Redirect to='/' />
+    )}
+    />
+  )
     
-    </div>
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Loginform}></Route>
+        <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} />
+      </Switch>
+    </Router>
   );
 }
 
