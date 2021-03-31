@@ -1,7 +1,7 @@
 import './App.css';
 import './components/Login/index.css';
 import { authenticate } from './api/Login/authenticate';
-import { Redirect, Route, Router, Switch } from 'react-router';
+import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Loginform from './components/Login/login';
 import HomePage from './pages/Homepage';
 import routeConfig from './config/route.js';
