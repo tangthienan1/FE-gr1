@@ -41,7 +41,7 @@ function Loginform(props) {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-inner">
                 <h2>Log in</h2>
-                {(errors !== "") ? (<div className="error">chỗ này từng là bỏ errors vào nhưng đéo dc, Anh ân coi nha</div>) : ""}
+                {(errors !== "") ? (<div className="error"></div>) : ""}
                 
                 <div className="form-group">
                     <label htmlFor="email">Email:</label>
