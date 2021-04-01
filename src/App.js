@@ -1,10 +1,10 @@
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { authenticate } from './api/Login/authenticate';
 import './App.css';
 import './components/Login/index.css';
-import { authenticate } from './api/Login/authenticate';
-import { Redirect, Route, Router, Switch } from 'react-router';
 import Loginform from './components/Login/login';
-import HomePage from './pages/Homepage';
-import routeConfig from './config/route.js';
+import Homepage from './pages/Homepage/index';
+
 
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
     />
   )
     
-  return (
+  return (    
     <Router>
       <Switch>
-        <Route path="/" exact component={Loginform}></Route>
-        <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} />
+        <Route path="/" exact component={Homepage}></Route>
+        {/* <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} /> */}
       </Switch>
     </Router>
   );

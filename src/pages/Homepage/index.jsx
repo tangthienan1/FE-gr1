@@ -1,5 +1,4 @@
-﻿﻿import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+﻿﻿import React, { useEffect, useState } from 'react';
 import {
     Container,
     Row
@@ -36,8 +35,10 @@ const Homepage = () => {
 
 
     return (
+        <>
         <Base>
             <div className="padding-bottom">
+                <SearchBar />
                 <SearchBar />
             </div>
             <Container>
@@ -53,7 +54,7 @@ const Homepage = () => {
                 <Gallery />
             </div>
         </Base>
-        
+        </>
     )
 }
 
