@@ -10,6 +10,7 @@ import Contents from '../../components/Base/include/Pagination/Contents';
 import Pagination from '../../components/Base/include/Pagination/Pagination';
 import './index.css';
 import contributionAPI from '../../api/contributionAPI';
+import '../../App.css'
 
 const Homepage = () => {
     const [contents, setContents] = useState([]);
