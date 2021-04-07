@@ -1,7 +1,5 @@
-import React, { useState, Component } from 'react';
-import { UncontrolledCarousel } from 'reactstrap';
-import Banner from '../Banner/Banner';
-import Media from 'react-media'
+import React, { useState } from 'react';
+import Media from 'react-media';
 import {
     Collapse,
     Navbar,
@@ -13,11 +11,7 @@ import {
     NavbarText,
     Col,
 } from 'reactstrap';
-import {
-    Form,
-    FormControl,
-    Button,
-} from 'react-bootstrap';
+import Banner from '../Banner/Banner';
 import './Header.css';
 
 const Header = (props) => {
@@ -27,24 +21,26 @@ const Header = (props) => {
 
     return (
         <div className="header-padding">
-            <Navbar light expand="md">
-                <NavbarBrand href="/" >Greenwich University Magazine System</NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="ml-auto" navbar>
-                        <Col xs="auto">
-                            <NavItem>
-                                <NavLink href="/">Guest</NavLink>
-                            </NavItem>
-                        </Col>
-                        <Col xs="auto">
-                            <NavItem>
-                                <NavLink href="/dashboard">Dashboard</NavLink>
-                            </NavItem>
-                        </Col>
-                    </Nav>
-                </Collapse>
-            </Navbar>
+            <div className="fixed-top">
+                <Navbar light expand="md">
+                    <NavbarBrand href="/" >Greenwich University Magazine System</NavbarBrand>
+                    <NavbarToggler onClick={toggle} />
+                    <Collapse isOpen={isOpen} navbar>
+                        <Nav className="ml-auto" navbar>
+                            <Col xs="auto">
+                                <NavItem>
+                                    <NavLink href="/">Guest</NavLink>
+                                </NavItem>
+                            </Col>
+                            <Col xs="auto">
+                                <NavItem>
+                                    <NavLink href="/dashboard">Dashboard</NavLink>
+                                </NavItem>
+                            </Col>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+            </div>
 
             <Media query='(min-width: 547px)'>
                 {matches => {
