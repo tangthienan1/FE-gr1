@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './admin.css'
 
-export const modal = ({show, close}) => {
+export const Modal = ({ show, close }) => {
     return (
         <div classname="modal-wrapper"
-        style={{opacity: show ? '1': '0'
-        }}
-        >
+            style={{
+                opacity: show ? '1' : '0'
+            }}>
             <div className="modal-header">
                 <p>Create new users</p>
                 <span onClick={close} className="close-modal-btn">x</span>
@@ -31,7 +31,7 @@ export const modal = ({show, close}) => {
                 <div className="modal-footer">
                     <button onClick={close} classname="btn-create">Create</button>
                 </div>
-         </div>
+            </div>
         </div>
     )
 }

@@ -5,19 +5,27 @@ import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-d
 import Loginform from './components/Login/login';
 import HomePage from './pages/Homepage';
 import routeConfig from './config/route.js';
-import Tabs from './pages/DashBoard/Admin/tabview'
-import { modal } from './pages/DashBoard/Admin/modal'
-
+import Tabview from './pages/DashBoard/Admin/tabview'
+import { openmodal } from './pages/DashBoard/Admin/openmodal'
+import Navbar from './pages/DashBoard/Admin/navbar'
 
 function App() {
-  /*const closeModalHandler = () => setShow(false);
-  const [show, setShow] = useState(false);*/
-  return(
-    <div>
-    <Tabs></Tabs>
-    </div>
+  const ProtectRoute = ({ component: Component, ...rest }) => (
+    <Route {...rest} render={(props) => (
+      // authenticate() ? <Component {...props} /> : <Redirect to='/' />
+      <Component {...props} />
+    )}
+    />
+  )
+
+  return (
+    /*<Switch>
+      <Route path="/" exact component={Loginform}></Route>
+      <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} />
+      <Route path={routeConfig.admin["list-url"]} component={Tabview} />
+    </Switch>*/
+   <Navbar/>
   );
-  }
+}
+
 export default App;
-/*<button onClick={()=> setShow(true)}classname="btn-openModal">Create</button>
-    <modal show={show} close={closeModalHandler}/>*/

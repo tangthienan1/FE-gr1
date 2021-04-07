@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './admin.css';
 
-function Tabs() {
+function Tabview() {
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -23,15 +23,15 @@ function Tabs() {
             <div className="content-tabs">
                 <div className={toggleState === 1 ?
                     "content active-content" : "content"}>
-                <input type="text" placeholder="Search"/>
+                    <input type="text" placeholder="Search" />
 
                 </div>
                 <div className={toggleState === 2 ?
                     "content active-content" : "content"}>
-          <input type="text" placeholder="Search"/>
+                    <input type="text" placeholder="Search" />
                 </div>
             </div>
         </div>
     )
 }
-export default Tabs;
+export default Tabview;
