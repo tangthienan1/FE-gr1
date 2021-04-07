@@ -6,7 +6,6 @@ import SearchBar from './include/Searchbar';
 function Base({children}){
     return <>
       <Header/>
-      <SearchBar/>
       <div className="container-fluid">
         {children}
         </div>

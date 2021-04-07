@@ -17,8 +17,8 @@ function App() {
 
   return (
     <Switch>
-      <Route path="/" exact component={Loginform}></Route>
-      <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} />
+      <Route path="/" exact component={HomePage}></Route>
+      {/* <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} /> */}
     </Switch>
   );
 }

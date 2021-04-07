@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+﻿﻿import React, { useEffect, useState } from 'react';
 import {
     Container,
     Row
@@ -38,8 +38,6 @@ const Homepage = () => {
         <>
         <Base>
             <div className="padding-bottom">
-                <SearchBar />
-                <SearchBar />
             </div>
             <Container>
                 <h1 className="text-primary mb-3">Contents</h1>
@@ -58,4 +56,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default Homepage;
