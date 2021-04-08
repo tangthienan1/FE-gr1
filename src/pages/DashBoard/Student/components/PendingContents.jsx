@@ -29,21 +29,19 @@ const PendingContents = ({ pendings, loading }) => {
         // </Row>
         // </>
 
-        <Row>
+        <div>
             {pendings.map(pending => (
-                <Col sm="4" key={pending.id}>
-                    <div className="padding">
-                    <Card className="card">
-                        <CardBody>
-                            <CardTitle tag="h5" className="title">{pending.title}</CardTitle>
-                            <CardText className="description">{pending.title}</CardText>
-                        </CardBody>
+                
+                    <Card className='card'>
+                        <div className='card-text-top'>
+                            <CardText className='card-title'>This is title</CardText>
+                            <CardText className='card-status'>Date approved</CardText>
+                        </div>
+                        <CardText className='card-des'>{pending.title}</CardText>
                     </Card>
-                    </div>
-                </Col>
 
             ))}
-        </Row>
+       </div>
     );
 }
 

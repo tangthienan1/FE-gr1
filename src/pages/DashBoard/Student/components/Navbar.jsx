@@ -30,18 +30,8 @@ const Example = (props) => {
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>
-                            <Col xs="auto">
-                                <NavItem>
-                                    <NavLink href="/">Guest</NavLink>
-                                </NavItem>
-                            </Col>
-                            <Col xs="auto">
-                                <NavItem>
-                                    <NavLink href="/dashboard">Dashboard</NavLink>
-                                </NavItem>
-                            </Col>
                             <UncontrolledDropdown nav inNavbar>
-                                {/* <Avatar src='./pngkey.com-avatar-png-1149847.png' /> */}
+                                <Avatar src='./pngkey.com-avatar-png-1149847.png' />
                                 <DropdownToggle nav caret>
                                 </DropdownToggle>
                                 <DropdownMenu right>

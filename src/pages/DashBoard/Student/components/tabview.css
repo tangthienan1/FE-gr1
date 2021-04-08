@@ -22,8 +22,8 @@ img{
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 800px;
-    height: 600px;
+    width: 80%;
+    height: 790px;
     background: #f1f1f1;
     margin: 100px auto 0;
     word-break: break-all;
@@ -70,6 +70,7 @@ img{
   }
   .content-tabs {
     flex-grow : 1;
+    height: 10em;
   }
   .content {
     background: white;
@@ -136,6 +137,21 @@ body{
   margin-top: 1.3em;
   align-self: flex-end;
 
+}
+
+.space-footer {
+  height: 550px;
+  width: 90%;
+}
+
+.space-bot {
+  height: 550px;
+  width: 100%;
+}
+
+.space-bottom {
+  height: 150px;
+  width: 100%;
 }
 
 .navbar {
