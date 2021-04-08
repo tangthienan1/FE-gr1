@@ -1,12 +1,39 @@
-import React from 'react'
-import { Card, Button, CardTitle, CardText, Form, FormGroup, Label, Input, FormText, Col } from 'reactstrap';
+import React, { useEffect, useState } from 'react'
+import { Card, Button, CardTitle, CardText, Form, FormGroup, Label, Input, FormText, Col, Row, Container } from 'reactstrap';
+import { PENDING_API } from '../../../../api/APIurl';
+import pendingAPI from '../../../../api/pendingAPI';
 import SearchBar from '../../../../components/Base/include/Searchbar';
+import Pagination from '../../../../components/Base/include/Pagination/Pagination';
+import PendingContents from './PendingContents'
 
-function Pending() {
+const Pending = () => {
+    const [pendings, setPendings] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [contentsPerPage, setContentsPerPage] = useState(9);
+
+    useEffect(() => {
+        const fetchPending = async () => {
+            setLoading(true);
+            const response = await pendingAPI.getPending();
+            setPendings(response.data);
+            setLoading(false);
+            console.log(response);
+            console.log(response.data);
+        }
+        fetchPending();
+    }, []);
+
+    const indexOfLastContent = currentPage * contentsPerPage;
+    const indexOfFirstContent = indexOfLastContent - contentsPerPage;
+    const currentPending = pendings.slice(indexOfFirstContent, indexOfLastContent);
+
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     return (
         <div>
             <div className='form_cb'>
-                <SearchBar/>
+                <SearchBar />
                 <FormGroup>
                     <Input className='form-input' type="select" name="select">
                         <option>Articles</option>
@@ -15,34 +42,15 @@ function Pending() {
                 </FormGroup>
             </div>
 
-            <div>
-                <Card className='card'>
-                    <div className='card-text-top'>
-                        <CardText className='card-title'>This is title</CardText>
-                        <CardText className='card-date'>Date</CardText>
-                        <CardText className='card-status'>Approve/Submit</CardText>
+            <Card>
+                <h1 className="text-primary mb-3">Contents</h1>
+                <Row>
+                    <PendingContents pendings={currentPending} loading={loading} key={pendings.id} />
+                    <div className="padding-top">
+                        <Pagination contentsPerPage={contentsPerPage} totalContent={pendings.length} paginate={paginate} />
                     </div>
-                    <CardText className='text-center'>With supporting text below as a natural lead-in to additional content.</CardText>
-                </Card>
-
-                <Card className='card'>
-                    <div className='card-text-top'>
-                        <CardText className='card-title'>This is title</CardText>
-                        <CardText className='card-date'>Date</CardText>
-                        <CardText className='card-status'>Approve/Submit</CardText>
-                    </div>
-                    <CardText className='text-center'>With supporting text below as a natural lead-in to additional content.</CardText>
-                </Card>
-
-                <Card className='card'>
-                    <div className='card-text-top'>
-                        <CardText className='card-title'>This is title</CardText>
-                        <CardText className='card-date'>Date</CardText>
-                        <CardText className='card-status'>Approve/Submit</CardText>
-                    </div>
-                    <CardText className='text-center'>With supporting text below as a natural lead-in to additional content.</CardText>
-                </Card>
-            </div>
+                </Row>
+            </Card>
         </div>
     )
 }

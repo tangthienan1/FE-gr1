@@ -19,8 +19,7 @@ function Approved() {
                 <Card className='card'>
                     <div className='card-text-top'>
                         <CardText className='card-title'>This is title</CardText>
-                        <CardText className='card-date'>Date</CardText>
-                        <CardText className='card-status'>Approve/Submit</CardText>
+                        <CardText className='card-status'>Date approved</CardText>
                     </div>
                     <CardText className='text-center'>With supporting text below as a natural lead-in to additional content.</CardText>
                 </Card>
@@ -28,8 +27,7 @@ function Approved() {
                 <Card className='card'>
                     <div className='card-text-top'>
                         <CardText className='card-title'>This is title</CardText>
-                        <CardText className='card-date'>Date</CardText>
-                        <CardText className='card-status'>Approve/Submit</CardText>
+                        <CardText className='card-status'>Date approved</CardText>
                     </div>
                     <CardText className='text-center'>With supporting text below as a natural lead-in to additional content.</CardText>
                 </Card>
@@ -37,8 +35,7 @@ function Approved() {
                 <Card className='card'>
                     <div className='card-text-top'>
                         <CardText className='card-title'>This is title</CardText>
-                        <CardText className='card-date'>Date</CardText>
-                        <CardText className='card-status'>Approve/Submit</CardText>
+                        <CardText className='card-status'>Date approved</CardText>
                     </div>
                     <CardText className='text-center'>With supporting text below as a natural lead-in to additional content.</CardText>
                 </Card>
