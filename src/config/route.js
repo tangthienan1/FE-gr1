@@ -1,6 +1,10 @@
 export const routeConfig = {
-    "dashboard": {
-        "list-url": "/dashboard"
+    "guest": {
+        "list-url": "/home"
+    },
+    "student": {
+        "list-url": "/studentdashboard"
     }
+
 }
 export default routeConfig

@@ -9,7 +9,8 @@ import SearchBar from '../../components/Base/include/Searchbar';
 import Contents from '../../components/Base/include/Pagination/Contents';
 import Pagination from '../../components/Base/include/Pagination/Pagination';
 import './index.css';
-import contributionAPI from '../../api/contributionAPI';
+import ApprovedAPI from '../../api/ApprovedAPI';
+import '../../App.css'
 
 const Homepage = () => {
     const [contents, setContents] = useState([]);
@@ -20,7 +21,7 @@ const Homepage = () => {
     useEffect(() => {
         const fetchContents = async () => {
             setLoading(true);
-            const response = await contributionAPI.getContribution();
+            const response = await ApprovedAPI.getApproved();
             setContents(response.data);
             setLoading(false);
         }

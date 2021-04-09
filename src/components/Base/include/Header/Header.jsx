@@ -42,7 +42,6 @@ const Header = (props) => {
                     </Collapse>
                 </Navbar>
             </div>
-
             <Media query='(min-width: 547px)'>
                 {matches => {
                     return matches ?
