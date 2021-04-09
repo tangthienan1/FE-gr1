@@ -37,6 +37,7 @@ function StudentView() {
                 </div>
                 <div className={toggleState === 2 ?
                     "content active-content" : "content"}>
+                        <Pending />
                 </div>
                 <div className={toggleState === 3 ?
                     "content active-content" : "content"}>
