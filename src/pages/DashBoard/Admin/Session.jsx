@@ -4,7 +4,7 @@ import Openmodal from './openmodal'
 
 function Session() {
     return (
-        <div>
+        <div className="form-cb">
             <SearchBar />
             <Openmodal/>
             

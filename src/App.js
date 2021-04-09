@@ -23,7 +23,7 @@ function App() {
       <Route path={routeConfig.admin["list-url"]} component={Tabview} />
     
     </Switch>
-    /*<AdminDashboard*/
+    /*<AdminDashboard/>*/
   );
 }
 

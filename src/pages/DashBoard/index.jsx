@@ -1,11 +1,12 @@
 import React from 'react'
-import Session from './Admin/Session'
+import Navbars from './Admin/Navbar'
 import Tabview from './Admin/tabview'
-import UserAccount from './Admin/UserAccount'
+
 
 function AdminDashboard() {
     return (
         <div>
+            <Navbars/>
             <Tabview/>
         </div>
     )
