@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Tabview from './components/TabView'
+import NavBars from '../Navbar'
+import StudentView from './components/StudentView'
 
 function StudentDashboard() {
     return (
         <div>
-            <Navbar />
-            <Tabview />
+            <NavBars />
+            <StudentView />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import ChartsPage from './ChartPage';
+import ChartsPage from '../../ChartPage';
 
 function Activity() {
 

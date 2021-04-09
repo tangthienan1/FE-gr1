@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Button, CardTitle, CardText, Form, FormGroup, Label, Input, FormText, Col } from 'reactstrap';
-import SearchBar from '../../../../components/Base/include/Searchbar';
-import ApprovedAPI from '../../../../api/ApprovedAPI';
-import Pagination from '../../../../components/Base/include/Pagination/Pagination';
 import ApprovedContent from './ApprovedContent';
+import ApprovedAPI from '../../api/ApprovedAPI';
+import Pagination from '../../components/Base/include/Pagination/Pagination';
+import SearchBar from '../../components/Base/include/Searchbar';
 
 function Approved() {
     const [approved, setApproved] = useState([]);
@@ -33,7 +33,7 @@ function Approved() {
         <>
         <div>
             <div className='form_cb'>
-                <SearchBar/>
+                <SearchBar />
                 <FormGroup>
                     <Input className='form-input' type="select" name="select">
                         <option>Articles</option>
