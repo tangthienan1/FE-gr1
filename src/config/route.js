@@ -5,5 +5,8 @@ export const routeConfig = {
     "admin": {
         "list-url": "/admin"
     },
+    "modal":{
+        "list-url":"/modal"
+    }
 }
 export default routeConfig

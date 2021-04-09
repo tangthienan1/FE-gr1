@@ -5,9 +5,7 @@ import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-d
 import Loginform from './components/Login/login';
 import HomePage from './pages/Homepage';
 import routeConfig from './config/route.js';
-import Tabview from './pages/DashBoard/Admin/tabview'
-import { openmodal } from './pages/DashBoard/Admin/openmodal'
-import Navbar from './pages/DashBoard/Admin/navbar'
+import AdminDashboard from './pages/DashBoard/index'
 
 function App() {
   const ProtectRoute = ({ component: Component, ...rest }) => (
@@ -19,12 +17,13 @@ function App() {
   )
 
   return (
-    /*<Switch>
+    <Switch>
       <Route path="/" exact component={Loginform}></Route>
       <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} />
       <Route path={routeConfig.admin["list-url"]} component={Tabview} />
-    </Switch>*/
-   <Navbar/>
+    
+    </Switch>
+    /*<AdminDashboard*/
   );
 }
 

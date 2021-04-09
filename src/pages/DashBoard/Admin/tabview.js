@@ -1,5 +1,9 @@
 import { useState } from 'react';
+import SearchBar from '../../../components/Base/include/Searchbar';
 import './admin.css';
+import Openmodal from './openmodal';
+import Session from './Session';
+import UserAccount from './UserAccount';
 
 function Tabview() {
 
@@ -9,6 +13,7 @@ function Tabview() {
     }
 
     return (
+        <>
         <div className="container">
 
             <div className="bloc-tabs">
@@ -23,15 +28,19 @@ function Tabview() {
             <div className="content-tabs">
                 <div className={toggleState === 1 ?
                     "content active-content" : "content"}>
-                    <input type="text" placeholder="Search" />
-
+                        <UserAccount/>
                 </div>
                 <div className={toggleState === 2 ?
                     "content active-content" : "content"}>
-                    <input type="text" placeholder="Search" />
+                        <Session/>
                 </div>
             </div>
+        </div>  
+        <div className="space">
+
         </div>
+    </>
     )
+    
 }
 export default Tabview;

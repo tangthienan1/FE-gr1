@@ -9,7 +9,7 @@ function Openmodal() {
   return (
     <div>
       { show ? <div onClick={closeModalHandler} className="back-drop"></div> : null }
-      <button onClick={() => setShow(true)} className="btn-openModal">Open Modal</button>
+      <button onClick={() => setShow(true)} className="btn-openModal">Create</button>
       <Modal show={show} close={closeModalHandler} />
     </div>
   );
