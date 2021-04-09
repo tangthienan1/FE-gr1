@@ -15,9 +15,9 @@ import {
     NavbarText,
     Col
 } from 'reactstrap';
-import './tabview.css';
+import './Student/components/tabview.css';
 
-const Example = (props) => {
+const NavBars = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -51,4 +51,4 @@ const Example = (props) => {
     );
 }
 
-export default Example;
+export default NavBars;

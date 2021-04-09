@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Card, Button, CardTitle, CardText, Form, FormGroup, Label, Input, FormText, Col, Row, Container } from 'reactstrap';
-import { PENDING_API } from '../../../../api/APIurl';
-import pendingAPI from '../../../../api/pendingAPI';
-import SearchBar from '../../../../components/Base/include/Searchbar';
-import Pagination from '../../../../components/Base/include/Pagination/Pagination';
+import React, { useEffect, useState } from 'react';
+import { Card, FormGroup, Input } from 'reactstrap';
+import pendingAPI from '../../api/pendingAPI';
+import Pagination from '../../components/Base/include/Pagination/Pagination';
+import SearchBar from '../../components/Base/include/Searchbar';
 import PendingContents from './PendingContents';
 
 const Pending = () => {
@@ -32,27 +31,27 @@ const Pending = () => {
 
     return (
         <>
-        <div>
-            <div className='form_cb'>
-                <SearchBar />
-                <FormGroup>
-                    <Input className='form-input' type="select" name="select">
-                        <option>Articles</option>
-                        <option>Photogragh</option>
-                    </Input>
-                </FormGroup>
-            </div>
+            <div>
+                <div className='form_cb'>
+                    <SearchBar />
+                    <FormGroup>
+                        <Input className='form-input' type="select" name="select">
+                            <option>Articles</option>
+                            <option>Photogragh</option>
+                        </Input>
+                    </FormGroup>
+                </div>
 
-            <Card>
-                
+                <Card>
+
                     <PendingContents pendings={currentPending} loading={loading} key={pendings.id} />
                     <div className="padding-top">
                         <Pagination contentsPerPage={contentsPerPage} totalContent={pendings.length} paginate={paginate} />
                     </div>
-                
-            </Card>
-        </div>
-        <div className='space-bot'></div>
+
+                </Card>
+            </div>
+            <div className='space-bot'></div>
         </>
     )
 }

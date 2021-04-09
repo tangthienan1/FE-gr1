@@ -1,8 +1,8 @@
 import React from 'react'
-import Tabview from '../Coordinator/components/TabView'
 import NavBars from '../Navbar'
+import Tabview from './components/TabView'
 
-function StudentDashboard() {
+function CoordinatorDashboard() {
     return (
         <div>
             <NavBars />
@@ -11,4 +11,4 @@ function StudentDashboard() {
     )
 }
 
-export default StudentDashboard
+export default CoordinatorDashboard

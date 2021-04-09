@@ -3,8 +3,16 @@ export const routeConfig = {
         "list-url": "/home"
     },
     "student": {
-        "list-url": "/studentdashboard"
+        "list-url": "/student"
+    },
+    "coordinator":{
+        "list-url": "/coordinator"
+    },
+    "admin":{
+        "list-url":"/admin"
+    },
+    "manager":{
+        "list-url":"/manager"
     }
-
 }
 export default routeConfig
