@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Activity from './Activity';
-import Approved from '../Approved';
-import Pending from '../Pending';
+import Pending from '../../Pending';
 import Submit from './Submit';
 import './tabview.css';
+import Approved from '../../Approved';
 
-function Tabview() {
+function StudentView() {
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -33,12 +33,10 @@ function Tabview() {
             <div className="content-tabs">
                 <div className={toggleState === 1 ?
                     "content active-content" : "content"}>
-                    <Approved />
-
+                        <Approved />
                 </div>
                 <div className={toggleState === 2 ?
                     "content active-content" : "content"}>
-                    <Pending />
                 </div>
                 <div className={toggleState === 3 ?
                     "content active-content" : "content"}>
@@ -52,4 +50,4 @@ function Tabview() {
         </div>
     )
 }
-export default Tabview;
+export default StudentView;

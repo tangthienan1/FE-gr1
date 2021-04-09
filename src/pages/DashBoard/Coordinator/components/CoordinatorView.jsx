@@ -4,7 +4,7 @@ import Pending from '../../Pending';
 import StatisticTab from './Statistic';
 import './tabview.css';
 
-function Tabview() {
+function CoordinatorView() {
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -43,4 +43,4 @@ function Tabview() {
         </div>
     )
 }
-export default Tabview;
+export default CoordinatorView;

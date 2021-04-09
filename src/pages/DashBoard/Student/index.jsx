@@ -1,12 +1,12 @@
 import React from 'react'
-import Tabview from '../Coordinator/components/TabView'
 import NavBars from '../Navbar'
+import StudentView from './components/StudentView'
 
 function StudentDashboard() {
     return (
         <div>
             <NavBars />
-            <Tabview />
+            <StudentView />
         </div>
     )
 }
