@@ -9,23 +9,22 @@ import {
     Row
 } from 'reactstrap';
 
-function ManagerContent({ approved, loading }) {
+function ManagerContent({ overview, loading }) {
     if (loading) {
         return <h2>Loading .... </h2>
     }
 
     return (
         <div>
-            {approved.map(approved => (
+            {overview.map(overview => (
                 
                     <Card className='card'>
                         <div className='card-text-top'>
                             <CardText className='card-title'>Article/PhotoTitle</CardText>
                             <CardText className='card-status'>Date approved</CardText>
                         </div>
-                        <CardText className='card-des'>{approved.title}</CardText>
+                        <CardText className='card-des'>{overview.title}</CardText>
                     </Card>
-
             ))}
        </div>
     )
