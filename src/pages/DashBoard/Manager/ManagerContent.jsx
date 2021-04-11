@@ -9,7 +9,7 @@ import {
     Row
 } from 'reactstrap';
 
-function ApprovedContent({ approved, loading }) {
+function ManagerContent({ approved, loading }) {
     if (loading) {
         return <h2>Loading .... </h2>
     }
@@ -20,7 +20,7 @@ function ApprovedContent({ approved, loading }) {
                 
                     <Card className='card'>
                         <div className='card-text-top'>
-                            <CardText className='card-title'>This is title</CardText>
+                            <CardText className='card-title'>Article/PhotoTitle</CardText>
                             <CardText className='card-status'>Date approved</CardText>
                         </div>
                         <CardText className='card-des'>{approved.title}</CardText>
@@ -31,4 +31,4 @@ function ApprovedContent({ approved, loading }) {
     )
 }
 
-export default ApprovedContent
+export default ManagerContent;

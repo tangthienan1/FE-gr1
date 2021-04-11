@@ -5,14 +5,15 @@ import { Redirect, Route, BrowserRouter as Router, Switch } from 'react-router-d
 import Loginform from './components/Login/login';
 import HomePage from './pages/Homepage';
 import routeConfig from './config/route.js';
-import AdminDashboard from './pages/DashBoard/index'
-import Pagination from './components/Base/include/Pagination/Pagination'
+import AdminDashboard from './pages/DashBoard/Admin/AdminDashboard'
+import ManagerDashboard from './pages/DashBoard/Manager/ManagerDashboard';
+
 
 
 function App() {
 
   return (
-      <AdminDashboard/>
+    <ManagerDashboard/>
   );
   }
 

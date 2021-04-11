@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbars from './Admin/Navbar'
-import Tabview from './Admin/tabview'
+import Navbars from './Navbar'
+import Tabview from './tabview'
 
 
 function AdminDashboard() {

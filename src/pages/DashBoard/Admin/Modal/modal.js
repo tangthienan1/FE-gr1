@@ -1,5 +1,5 @@
 import React from 'react'
-import './admin.css'
+import '../admin.css'
 
 export const Modal = ({ show, close }) => {
     return (

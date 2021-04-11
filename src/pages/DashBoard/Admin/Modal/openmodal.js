@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from './modal';
-import './admin.css'
+import '../admin.css'
 function Openmodal() {
   const [show, setShow] = useState(false);
 
