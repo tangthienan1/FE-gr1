@@ -35,5 +35,4 @@ const Contents = ({ contents, loading }) => {
         </Row>
     );
 }
-
-export default Contents
+export default Contents;

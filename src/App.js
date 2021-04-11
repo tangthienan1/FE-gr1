@@ -6,20 +6,14 @@ import Loginform from './components/Login/login';
 import HomePage from './pages/Homepage';
 import routeConfig from './config/route.js';
 import AdminDashboard from './pages/DashBoard/index'
-import { Pagination } from 'react-bootstrap';
+import Pagination from './components/Base/include/Pagination/Pagination'
+
 
 function App() {
-  const ProtectRoute = ({ component: Component, ...rest }) => (
-    <Route {...rest} render={(props) => (
-      // authenticate() ? <Component {...props} /> : <Redirect to='/' />
-      <Component {...props} />
-    )}
-    />
-  )
 
   return (
-  <Pagination/>
+      <AdminDashboard/>
   );
-}
+  }
 
 export default App;

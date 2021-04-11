@@ -1,4 +1,5 @@
 import React from 'react'
+import Pagination from '../../../components/Base/include/Pagination/Pagination'
 import SearchBar from '../../../components/Base/include/Searchbar'
 import Openmodal from './openmodal'
 
@@ -7,6 +8,7 @@ function Session() {
         <div className="form-cb">
             <SearchBar />
             <Openmodal/>
+            <Pagination/>
             
         </div>
     )
