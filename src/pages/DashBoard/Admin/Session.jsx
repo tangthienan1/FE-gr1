@@ -1,7 +1,7 @@
 import React from 'react'
 import Pagination from '../../../components/Base/include/Pagination/Pagination'
 import SearchBar from '../../../components/Base/include/Searchbar'
-import Openmodal from './openmodal'
+import Openmodal from './Modal/openmodal'
 
 function Session() {
     return (

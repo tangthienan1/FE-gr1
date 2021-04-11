@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import SearchBar from '../../../components/Base/include/Searchbar';
 import './admin.css';
-import Openmodal from './openmodal';
 import Session from './Session';
 import UserAccount from './UserAccount';
 
