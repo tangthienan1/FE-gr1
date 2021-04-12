@@ -1,12 +1,14 @@
 import React from 'react';
 import Footer from './include/Footer/Footer';
 import Header from './include/Header/Header';
+import SearchBar from './include/Searchbar';
 
 function Base({children}){
     return <>
-      <Header>
+      <Header/>
+      <div className="container-fluid">
         {children}
-      </Header>
+        </div>
       <Footer />
     </>
 }
