@@ -13,7 +13,7 @@ function Statistic() {
         </div>
         
         <div className='statistic-chart-line'>
-          <ManagerButtonDropdown />
+          
           <LineChart/>
         </div>
       </div>

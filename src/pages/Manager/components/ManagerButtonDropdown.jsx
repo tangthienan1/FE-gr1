@@ -7,6 +7,7 @@ const ManagerButtonDropdown = (props) => {
   const toggle = () => setOpen(!dropdownOpen);
 
   return (
+    <div className='dropdown-button'>
     <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle caret>
         Academic year
@@ -18,6 +19,7 @@ const ManagerButtonDropdown = (props) => {
         <DropdownItem>2021</DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
+    </div>
   );
 }
 

@@ -56,11 +56,9 @@ class LineChart extends React.Component {
   render() {
     return (
       <>
-      <MDBContainer className='space-footer'>
-        <div >
+      <MDBContainer className='manager-line-chart'>
         <h3 className="mt-5">Line chart</h3>
         <Line data={this.state.dataLine} options={{ responsive: true }} />
-        </div>
       </MDBContainer>
       </>
     );
