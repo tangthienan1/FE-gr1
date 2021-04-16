@@ -11,7 +11,7 @@ import CoordinatorDashboard from './pages/DashBoard/Coordinator';
 
 function App() {
   const ProtectRoute = ({ component: Component, ...rest }) => (
-    <Route {...rest} render={(props) => (
+    <ProtectRoute {...rest} render={(props) => (
       authenticate() ? <Component {...props} /> : <Redirect to='/' />
     )}
     />
@@ -23,6 +23,7 @@ function App() {
       {/* <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} /> */}
       <Route path={routeConfig.student['list-url']} component={StudentDashboard}></Route>
       <Route path={routeConfig.coordinator['list-url']} component={CoordinatorDashboard}></Route>
+      <Route path={routeConfig.guest['list-url']} component={HomePage}></Route>
 
       
     </Switch>
