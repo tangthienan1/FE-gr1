@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import loginApi from '../../api/Login/loginApi';
 import './css/main.css';
 import './css/util.css';
-
+import mainImg from '../Login/images/img-01.png'
 function Loginform(props) {
     const { register, handleSubmit, errors } = useForm()
     const history = useHistory();
@@ -19,17 +19,18 @@ function Loginform(props) {
         history.push(path);
     }
 
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const onSubmit = async (data, e) => {
-        e.prevenDefault();
-        setEmail(data.email);
+        e.preventDefault();
+        setUsername(data.username);
         setPassword(data.password);
         const loginData = {
-            email,
+            username,
             password
         }
+        console.log(loginData);
         const response = await loginApi.login(loginData);
         if (response.data != null) {
             //set token vao localstorage xong r moi redirect sang trang dashboard
@@ -42,7 +43,7 @@ function Loginform(props) {
             <div class="container-login100">
                 <div class="wrap-login100">
                     <div class="login100-pic">
-                        <img src="https://www.unisongroup.net/login/images/img-01.png" alt="IMG" />
+                        <img src={mainImg} alt="IMG" />
                     </div>
                     <form class="login100-form" onSubmit={handleSubmit(onSubmit)}>
                         <span class="login100-form-title">
@@ -50,13 +51,13 @@ function Loginform(props) {
         			    </span>
 
                         <div class="wrap-input100">
-                            <input class="input100" type="email" name="email" placeholder="Email" ref={registerCheck("Email is Invalid")} />                            
+                            <input class="input100" type="text" name="username" placeholder="Username" ref={registerCheck("Username is Invalid")} />                            
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <i class="fa fa-user" aria-hidden="true"></i>
                             </span>
                         </div>
-                        {errors.email && <p className="text-danger pb-2">Email is invalid</p>}
+                        {errors.username && <p className="text-danger pb-2"> is invalid</p>}
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
                             <input class="input100" type="password" name="password" placeholder="Password" ref={registerCheck("Password is invalid", {value: 8, message: "Too short, at least 8 character"})} />
 
@@ -77,7 +78,7 @@ function Loginform(props) {
                                 Forgot
         				    </span>
                             <a class="txt2" href="#">
-                                Email / Password?
+                                Username / Password?
         				    </a>
                         </div>
 
