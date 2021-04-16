@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import Manager from './Manager';
-import './manager.css';
+import './managerTabview.css';
+import Statistic from './Statistic'
 
-
-function ManagerTab() {
+function ManagerTabview() {
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -11,7 +10,6 @@ function ManagerTab() {
     }
 
     return (
-
         <div className="container">
 
             <div className="bloc-tabs">
@@ -26,19 +24,15 @@ function ManagerTab() {
             <div className="content-tabs">
                 <div className={toggleState === 1 ?
                     "content active-content" : "content"}>
-                    <Manager />
+                    <h3>hy</h3>
+
                 </div>
                 <div className={toggleState === 2 ?
                     "content active-content" : "content"}>
-                    <Manager />
+                <Statistic />
                 </div>
-            </div>
-            <div className="space">
-
             </div>
         </div>
     )
-
 }
-
-export default ManagerTab;
+export default ManagerTabview;

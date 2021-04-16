@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Button, CardTitle, CardText, Form, FormGroup, Label, Input, FormText, Col } from 'reactstrap';
-import Pagination from '../../../components/Base/include/Pagination/Pagination';
-import SearchBar from '../../../components/Base/include/Searchbar';
+import Pagination from '../../../../components/Base/include/Pagination/Pagination';
+import SearchBar from '../../../../components/Base/include/Searchbar';
 import ManagerContent from './ManagerContent'
-import ManagerAPI from '../../../api/commentAPI'
+import ManagerAPI from '../../../../api/commentAPI'
 
 function Manager() {
     const [overview, setOverview] = useState([]);
