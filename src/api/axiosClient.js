@@ -1,8 +1,9 @@
 import axios from 'axios'
 import queryString from "querystring"
+import { beURL } from '../components/common/constant';
 
 const axiosClient = axios.create({
-    baseURL: process.env.REACT_APP_API_URL,
+    baseURL: beURL,
     header: {
         "content-type": "application/json",
     },

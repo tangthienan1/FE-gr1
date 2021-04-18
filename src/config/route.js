@@ -2,11 +2,23 @@ export const routeConfig = {
     "dashboard": {
         "list-url": "/dashboard"
     },
-    "admin": {
-        "list-url": "/admin"
+    "homepage":{
+        "list-url": "/homepage"
     },
-    "modal":{
-        "list-url":"/modal"
+    "guest": {
+        "list-url": "/home"
+    },
+    "student": {
+        "list-url": "/student"
+    },
+    "coordinator":{
+        "list-url": "/coordinator"
+    },
+    "admin":{
+        "list-url":"/admin"
+    },
+    "manager":{
+        "list-url":"/manager"
     }
 }
 export default routeConfig
