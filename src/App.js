@@ -20,7 +20,7 @@ function App() {
   return (
     <Switch>
       <Route path="/" exact component={Loginform}></Route>
-      <ProtectRoute path={routeConfig.homepage["list-url"]} component={HomePage} />
+      <Route path={routeConfig.homepage["list-url"]} component={HomePage} />
       {/* <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} /> */}
       <Route path={routeConfig.student['list-url']} component={StudentDashboard}></Route>
       <Route path={routeConfig.coordinator['list-url']} component={CoordinatorDashboard}></Route>

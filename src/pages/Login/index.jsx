@@ -6,7 +6,7 @@ import HomePage from '../Homepage';
 import Loginform from '../../components/Login/login';
 
 const Loginpage = () => {
-    authenticate() && <Redirect to={routeConfig.dashboard['list-url']} component={HomePage}/>
+    // authenticate() && <Redirect to={routeConfig.dashboard['list-url']} component={HomePage}/>
     return (
         <Loginform/>
     );

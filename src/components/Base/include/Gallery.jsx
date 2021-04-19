@@ -59,7 +59,7 @@ const Gallery = (props) => {
     );
   });
 
-  return (
+  return <>
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -70,7 +70,7 @@ const Gallery = (props) => {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
-  );
+  </>;
 }
 
 export default Gallery;

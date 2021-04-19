@@ -15,7 +15,7 @@ function Loginform(props) {
         }))
     }
     const redirectToDashBoard = () => {
-        let path = `dashboard`;
+        let path = `homepage`;
         history.push(path);
     }
 
@@ -34,7 +34,7 @@ function Loginform(props) {
         const response = await loginApi.login(loginData);
         if (response.data != null) {
             //set token vao localstorage xong r moi redirect sang trang dashboard
-            localStorage.setItem("token", response.data.result.token);
+            localStorage.setItem("token", response.data.access_token);
             redirectToDashBoard();
         }
     }
