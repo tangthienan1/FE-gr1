@@ -19,6 +19,9 @@ export const routeConfig = {
     },
     "manager":{
         "list-url":"/manager"
+    },
+    "marketing": {
+        "list-url": "/marketing"
     }
 }
 export default routeConfig
