@@ -80,15 +80,14 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.modal-wrapper{
+/* 
+.modal-wrapper1{
   background: #fff;
-  width: 80%;
-  max-width: 800px;
+  width: 200px;
   margin: 4rem auto;
 }
 
-.modal-header{
+.modal-header1{
   background: #2c2c2c;
   color: #e9e9e9;
   padding: 1rem;
@@ -97,21 +96,18 @@ body{
   justify-content: space-between;
 }
 
-.modal-header span{
-  font-size: 1.5rem;
-  cursor: pointer;
-}
 
-.modal-content{
+.modal-content1{
   padding: 1.5rem 1rem;
+  background-color: white;
 }
 
-.modal-form{
+.modal-form1{
   display: block;
-  width: 300px;
+  width: 200px;
   margin-bottom: 15px;
 }
-.modal-form label{
+.modal-form1 label{
   display: block;
   color: black;
   font-size: 12px;
@@ -119,11 +115,12 @@ body{
   transition: 0.4s;
 }
 
-.modal-form input:focus{
+.modal-form1 input:focus{
   box-shadow:0px 0px 3px rgba(0, 0, 0, 2); 
+  background-color: white;
 }
 
-.modal-footer{
+.modal-footer1{
   display: block;
   font-size: 1rem;
   margin-left: auto;
@@ -133,7 +130,7 @@ body{
   border:none;
   outline: none;
   cursor: pointer;
-}
+} */
 
 .space{
   height:150px;
@@ -143,7 +140,7 @@ body{
 .form-cb {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .form-input {
@@ -152,5 +149,79 @@ body{
   margin-right: auto;
   margin-top: 1.8em;
   align-self: flex-end;
+}
 
+.table{
+  height: fit-content;
+  position:absolute;
+ 
+}
+.App_t {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.modal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+}
+
+button {
+  font-size: .9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: .3rem 1rem;
+  margin-left: .5rem;
+}
+
+.button-default {
+  background: #247BA0;
+  color: #fff;
 }
