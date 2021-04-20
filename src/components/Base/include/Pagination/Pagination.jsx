@@ -22,4 +22,4 @@ const Pagination = ({ contentsPerPage, totalContent, paginate }) => {
     )
 }
 
-export default Pagination
+export default Pagination;

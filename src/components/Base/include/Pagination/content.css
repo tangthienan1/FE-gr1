@@ -1,0 +1,16 @@
+.card-body {
+    width: 260px;
+    height: 300px;
+}
+
+.padding {
+    padding-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
