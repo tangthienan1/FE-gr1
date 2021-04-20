@@ -20,7 +20,7 @@ function Profile() {
     }, []);
 
     return (
-        <div className="container">
+        <div className="container_a">
             <Form key={profile.id}>
                 <Image src={img} style={{ width: 400, height: 400 }} />
                 <FormGroup>

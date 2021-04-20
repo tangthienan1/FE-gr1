@@ -11,7 +11,7 @@ function CoordinatorView() {
     }
 
     return (
-        <div className="container">
+        <div className="container_a">
 
             <div className="bloc-tabs">
                 <button className={toggleState === 1 ?

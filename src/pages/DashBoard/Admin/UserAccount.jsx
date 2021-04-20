@@ -6,7 +6,7 @@ import Openmodal from './Modal/openmodal'
 function UserAccount() {
     return (
         <div>
-            <div className="form-cb">
+            <div className="form_cb">
             <SearchBar />
             <Openmodal/>  
             </div>

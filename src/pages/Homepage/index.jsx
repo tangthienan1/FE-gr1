@@ -46,7 +46,7 @@ const Homepage = () => {
                     </div>
                 </Row>
             </Container>
-            <div className="padding-a">
+            <div className="padding-a p-4">
                 <Gallery />
             </div>
         </Base>

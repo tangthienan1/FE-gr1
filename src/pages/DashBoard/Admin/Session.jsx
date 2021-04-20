@@ -9,7 +9,6 @@ function Session() {
         <div className="form_cb">
             <SearchBar />
             <Openmodal/>
-            
         </div>
         <Pagination/>
         </>
