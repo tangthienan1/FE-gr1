@@ -19,6 +19,9 @@ export const routeConfig = {
     },
     "manager":{
         "list-url":"/manager"
+    },
+    "profile":{
+        "list-url":"/profile"
     }
 }
 export default routeConfig

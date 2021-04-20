@@ -94,6 +94,12 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.nav-all {
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 20vh;
+}
+
 .card {
   height: 8em;
 }

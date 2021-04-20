@@ -7,6 +7,9 @@ import HomePage from './pages/Homepage';
 import routeConfig from './config/route.js';
 import StudentDashboard from './pages/DashBoard/Student';
 import CoordinatorDashboard from './pages/DashBoard/Coordinator';
+import Profile from './pages/Profile/Profile';
+import ProfilePage from './pages/Profile';
+
 import AdminDashboard from './pages/DashBoard/Admin/AdminDashboard';
 import ManagerDashboard from './pages/DashBoard/Manager/Overview/ManagerDashboard';
 import LoginPage from './pages/Login';
@@ -14,13 +17,25 @@ import LoginPage from './pages/Login';
 function App() {
 
   const ProtectRoute = ({ component: Component, ...rest }) => (
-    <Route {...rest} render={(props) => (
+    <ProtectRoute {...rest} render={(props) => (
       authenticate() ? <Component {...props} /> : <Redirect to='/' />
     )}
     />
   )
 
   return (
+<<<<<<< HEAD
+    <Switch>
+      <Route path="/" exact component={Loginform}></Route>
+      <Route path={routeConfig.homepage["list-url"]} component={HomePage} />
+      {/* <ProtectRoute path={routeConfig.dashboard["list-url"]} component={HomePage} /> */}
+      <Route path={routeConfig.student['list-url']} component={StudentDashboard}></Route>
+      <Route path={routeConfig.coordinator['list-url']} component={CoordinatorDashboard}></Route>
+      <Route path={routeConfig.guest['list-url']} component={HomePage}></Route>
+      <Route path={routeConfig.profile['list-url']} component={ProfilePage}></Route>
+
+    </Switch>
+=======
     <div className="App">
       <Switch>
         <Route path="/" exact component={LoginPage}></Route>
@@ -32,6 +47,7 @@ function App() {
       </Switch>
     </div>
 
+>>>>>>> origin/TL_anttgcs18437_homepage_fixing
   );
 }
 
