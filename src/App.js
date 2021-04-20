@@ -3,6 +3,11 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { authenticate } from './api/Login/authenticate';
 import './App.css';
 import routeConfig from './config/route.js';
+import StudentDashboard from './pages/DashBoard/Student';
+import CoordinatorDashboard from './pages/DashBoard/Coordinator';
+import Profile from './pages/Profile/Profile';
+import ProfilePage from './pages/Profile';
+
 import AdminDashboard from './pages/DashBoard/Admin/AdminDashboard';
 import CoordinatorDashboard from './pages/DashBoard/Coordinator';
 import ManagerDashboard from './pages/DashBoard/Manager/Overview/ManagerDashboard';
@@ -12,7 +17,7 @@ import LoginPage from './pages/Login';
 
 function App() {
   const ProtectRoute = ({ component: Component, ...rest }) => (
-    <Route {...rest} render={(props) => (
+    <ProtectRoute {...rest} render={(props) => (
       authenticate() ? <Component {...props} /> : <Redirect to='/' />
     )}
     />
@@ -29,7 +34,6 @@ function App() {
         <Route path={routeConfig.manager['list-url']} component={ManagerDashboard} />
       </Switch>
     </div>
-
   );
 }
 

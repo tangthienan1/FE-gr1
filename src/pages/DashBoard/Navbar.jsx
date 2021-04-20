@@ -21,6 +21,7 @@ const NavBars = (props) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <UncontrolledDropdown nav inNavbar>
+                            <div className='nav-all'>
                                 <Avatar src='./pngkey.com-avatar-png-1149847.png' />
                                 <DropdownToggle nav caret>
                                 </DropdownToggle>
@@ -32,6 +33,7 @@ const NavBars = (props) => {
                                         Sign out
                                     </DropdownItem>
                                 </DropdownMenu>
+                                </div>
                             </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
