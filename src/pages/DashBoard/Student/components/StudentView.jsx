@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Activity from './Activity';
 import Pending from '../../Pending';
 import Submit from './Submit';
-import './tabview.css';
 import Approved from '../../Approved';
 
 function StudentView() {

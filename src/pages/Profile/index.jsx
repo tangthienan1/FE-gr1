@@ -5,7 +5,7 @@ import Profile from './Profile'
 function ProfilePage() {
     return (
         <div>
-            <NavBars></NavBars>
+            <NavBars />
             <Profile />
         </div>
     )

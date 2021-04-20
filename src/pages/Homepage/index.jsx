@@ -3,14 +3,11 @@ import {
     Container,
     Row
 } from 'reactstrap';
+import ApprovedAPI from '../../api/ApprovedAPI';
 import Base from '../../components/Base';
 import Gallery from '../../components/Base/include/Gallery';
-import SearchBar from '../../components/Base/include/Searchbar';
 import Contents from '../../components/Base/include/Pagination/Contents';
 import Pagination from '../../components/Base/include/Pagination/Pagination';
-import './index.css';
-import ApprovedAPI from '../../api/ApprovedAPI';
-import '../../App.css'
 
 const Homepage = () => {
     const [contents, setContents] = useState([]);
@@ -38,18 +35,18 @@ const Homepage = () => {
     return (
         <>
         <Base>
-            <div className="padding-bottom">
+            <div className="padding-b">
             </div>
             <Container>
                 <h1 className="text-primary mb-3">Contents</h1>
                 <Row>
                     <Contents contents={currentContent} loading={loading} key={contents.id} />
-                    <div className="padding-top">
+                    <div className="padding-a">
                         <Pagination contentsPerPage={contentsPerPage} totalContent={contents.length} paginate={paginate} />
                     </div>
                 </Row>
             </Container>
-            <div className="padding-top">
+            <div className="padding-a">
                 <Gallery />
             </div>
         </Base>

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Manager from './Manager';
-import './manager.css';
 import Statistic from '../Statistic/Statistic';
 
 

@@ -1,7 +1,5 @@
 import React from 'react';
-import { ToggleButton } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
-import '../admin.css'
 
 
 

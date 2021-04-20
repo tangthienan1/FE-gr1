@@ -1,6 +1,5 @@
 import React from 'react'
 import SearchBar from '../../../components/Base/include/Searchbar'
-import './admin.css'
 import Datatable from './datatable'
 import Openmodal from './Modal/openmodal'
 

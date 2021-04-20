@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './admin.css';
 import Session from './Session';
 import UserAccount from './UserAccount';
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText, Col, Row } from 'reactstrap';
-import './tabview.css'
+import { Button, Col, Form, FormGroup, Input, Label, Row } from 'reactstrap';
 
 function Submit() {
     return (

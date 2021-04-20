@@ -1,12 +1,7 @@
 import React from 'react';
 import {
     Card,
-    CardBody,
-    CardImg,
-    CardText,
-    CardTitle,
-    Col,
-    Row
+    CardText
 } from 'reactstrap';
 
 const PendingContents = ({ pendings, loading }) => {

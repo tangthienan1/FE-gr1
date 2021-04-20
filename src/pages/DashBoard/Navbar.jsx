@@ -2,20 +2,10 @@ import { Avatar } from '@material-ui/core';
 import React, { useState } from 'react';
 import {
     Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText,
-    Col
+    DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar,
+    NavbarBrand, NavbarToggler,
+    UncontrolledDropdown
 } from 'reactstrap';
-import './Student/components/tabview.css';
 
 const NavBars = (props) => {
     const [isOpen, setIsOpen] = useState(false);
