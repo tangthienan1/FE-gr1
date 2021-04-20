@@ -22,7 +22,7 @@ const Header = (props) => {
 
     return (
         <div className="header-padding">
-            <div className="fixed-top">
+            <div className="sticky-top">
                 <Navbar light expand="md">
                     <NavbarBrand href="/" >Greenwich University Magazine System</NavbarBrand>
                     <NavbarToggler onClick={toggle} />
