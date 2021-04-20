@@ -50,7 +50,7 @@ function Approved() {
                 
             </Card>
         </div>
-        <div className='space-bot'></div>
+        <div className='space-bottom'></div>
         </>
     )
 }

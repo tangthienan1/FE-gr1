@@ -5,8 +5,8 @@ import useModal from './useModal';
 function Openmodal() {
   const {isShowing, toggle} = useModal();
   return (
-    <div className="App">
-      <button className="button-default" onClick={toggle}>Show Modal</button>
+    <div className="App_t">
+      <button className="button-default_cn" onClick={toggle}>Show Modal</button>
       <Modal
         isShowing={isShowing}
         hide={toggle}

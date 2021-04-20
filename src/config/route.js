@@ -5,8 +5,8 @@ export const routeConfig = {
     "homepage":{
         "list-url": "/homepage"
     },
-    "guest": {
-        "list-url": "/home"
+    "marketing": {
+        "list-url": "/marketing"
     },
     "student": {
         "list-url": "/student"

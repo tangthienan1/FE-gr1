@@ -1,0 +1,259 @@
+.tab-content {
+    flex: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    height: 790px;
+    background: #f1f1f1;
+    margin: 100px auto 0;
+    word-break: break-all;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .bloc-tabs {
+    display: flex;
+  }
+  .tabs {
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
+
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .active-tabs  {
+    background: white;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+  }
+
+  .content-tabs {
+    flex-grow : 1;
+    height: 10em;
+  }
+  .content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+ 
+  .active-content {
+    display: block;
+  }
+
+  .nav-all {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 10vh;
+  }
+  
+  .card-all {
+    height: 8em;
+  }
+  .card-text-top {
+    font-weight: bold;
+    font-size: 18;
+    display: inline-flex;
+    border-bottom: 1px solid lightslategray;
+  }
+  .card-title{
+    margin-left: 1em;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+  .card-date {
+    margin-left: auto;
+  }
+  .card-status {
+    margin-left: auto;
+    margin-right: 1em;
+  }
+  .card-des {
+    font-size: 15;
+  }
+  .form_cb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-input {
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.3em;
+    align-self: flex-end;
+  }
+  .space-footer {
+    height: 550px;
+    width: 90%;
+  }
+
+  .space-bot {
+    height: 550px;
+    width: 100%;
+  }
+  .space-bottom {
+    height: 150px;
+    width: 100%;
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    flex: 1;
+  }
+  .avatar {
+      height: 5px;
+      width: 5px;
+  }
+
+  .modal-wrapper1{
+    background: #fff;
+    width: 200px;
+    margin: 4rem auto;
+  }
+  
+  .modal-header1{
+    background: #2c2c2c;
+    color: #e9e9e9;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .modal-content1{
+    padding: 1.5rem 1rem;
+    background-color: white;
+  }
+  
+  .modal-form1{
+    display: block;
+    width: 200px;
+    margin-bottom: 15px;
+  }
+  .modal-form1 label{
+    display: block;
+    color: black;
+    font-size: 12px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+  }
+  
+  .modal-form1 input:focus{
+    box-shadow:0px 0px 3px rgba(0, 0, 0, 2); 
+    background-color: white;
+  }
+  
+  .modal-footer1{
+    display: block;
+    font-size: 1rem;
+    margin-left: auto;
+    padding: 0.5rem 1.8rem;
+    background: #DD501D;
+    color: #fff;
+    border:none;
+    outline: none;
+    cursor: pointer;
+  } 
+  
+  .App_t {
+    padding-top: 2rem;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  
+  .modal {
+    z-index: 100;
+    background: white;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: 3px;
+    max-width: 500px;
+    padding: 2rem;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-close-button {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: .3;
+    cursor: pointer;
+    border: none;
+  }
+
+  .button_cn {
+    font-size: .9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    padding: .3rem 1rem;
+    margin-left: .5rem;
+  }
+  
+  .button-default_cn {
+    background: #247BA0;
+    color: #fff;
+  }
+
+  

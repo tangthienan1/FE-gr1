@@ -3,13 +3,11 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { authenticate } from './api/Login/authenticate';
 import './App.css';
 import routeConfig from './config/route.js';
-import StudentDashboard from './pages/DashBoard/Student';
-import CoordinatorDashboard from './pages/DashBoard/Coordinator';
 import Profile from './pages/Profile/Profile';
 import ProfilePage from './pages/Profile';
 
 import AdminDashboard from './pages/DashBoard/Admin/AdminDashboard';
-import CoordinatorDashboard from './pages/DashBoard/Coordinator';
+import CoordinatorDashboard from './pages/DashBoard/Coordinator/index';
 import ManagerDashboard from './pages/DashBoard/Manager/Overview/ManagerDashboard';
 import StudentDashboard from './pages/DashBoard/Student';
 import HomePage from './pages/Homepage';

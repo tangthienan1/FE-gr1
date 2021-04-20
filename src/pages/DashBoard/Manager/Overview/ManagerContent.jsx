@@ -18,7 +18,7 @@ function ManagerContent({ overview, loading }) {
         <div>
             {overview.map(overview => (
                 
-                    <Card className='card'>
+                    <Card className='card-all'>
                         <div className='card-text-top'>
                             <CardText className='card-title'>Article/PhotoTitle</CardText>
                             <CardText className='card-status'>Date approved</CardText>

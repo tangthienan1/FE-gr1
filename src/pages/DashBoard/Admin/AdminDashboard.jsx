@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbars from './Navbar'
 import Tabview from './tabview'
 import '../../index.css'
+import NavBars from '../Navbar';
 
 
 function AdminDashboard() {
     return (
         <div>
-            <Navbars/>
+            <NavBars/>
             <Tabview/>
         </div>
     )

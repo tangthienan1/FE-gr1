@@ -5,12 +5,14 @@ import Openmodal from './Modal/openmodal'
 
 function Session() {
     return (
-        <div className="form-cb">
+        <>
+        <div className="form_cb">
             <SearchBar />
             <Openmodal/>
-            <Pagination/>
             
         </div>
+        <Pagination/>
+        </>
     )
 }
 

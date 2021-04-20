@@ -1,13 +1,13 @@
 import React from 'react'
+import NavBars from '../../Navbar';
 import ManagerTab from './managertabs';
-import Navbars from './Navbar'
 
 
 
 function ManagerDashboard() {
     return (
         <div>
-            <Navbars/>
+            <NavBars/>
             <ManagerTab/>
         </div>
     )

@@ -13,7 +13,7 @@ function ApprovedContent({ approved, loading }) {
         <div>
             {approved.map(approved => (
                 
-                    <Card className='card'>
+                    <Card className='card-all'>
                         <div className='card-text-top'>
                             <CardText className='card-title'>This is title</CardText>
                             <CardText className='card-status'>Date approved</CardText>

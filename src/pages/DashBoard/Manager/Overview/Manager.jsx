@@ -32,7 +32,7 @@ function Manager() {
     return (
         <>
         <div>
-            <div className='form-cb'>
+            <div className='form_cb'>
                 <SearchBar />
                 <FormGroup>
                     <Input className='form-input' type="select" name="select">
