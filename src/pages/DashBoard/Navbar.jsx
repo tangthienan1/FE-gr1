@@ -6,6 +6,7 @@ import {
     NavbarBrand, NavbarToggler,
     UncontrolledDropdown
 } from 'reactstrap';
+import routeConfig from '../../config/route';
 
 const NavBars = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const NavBars = (props) => {
                                 <DropdownToggle nav caret>
                                 </DropdownToggle>
                                 <DropdownMenu right>
-                                    <DropdownItem>
+                                    <DropdownItem href={routeConfig.profile['list-url']}>
                                         Profile
                                     </DropdownItem>
                                     <DropdownItem>

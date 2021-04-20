@@ -17,6 +17,7 @@
   .bloc-tabs {
     display: flex;
   }
+
   .tabs {
     padding: 15px;
     text-align: center;
@@ -165,4 +166,3 @@
     color: #fff;
   }
 
-  

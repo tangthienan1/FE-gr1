@@ -22,6 +22,9 @@ export const routeConfig = {
     },
     "profile":{
         "list-url":"/profile"
+    },
+    "signup":{
+        "list-url":"/signup"
     }
 }
 export default routeConfig
