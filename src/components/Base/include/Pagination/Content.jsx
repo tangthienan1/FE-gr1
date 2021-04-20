@@ -21,7 +21,7 @@ const Contents = ({ contents, loading }) => {
                 
                 <Col sm="4" key={content.id}>
                     <div className="padding">
-                    <Card className="card">
+                    <Card className="card-body">
                         <CardImg top width="100%" src={content.url} className=""  />
                         <CardBody>
                             <CardTitle tag="h5" className="title">{content.title}</CardTitle>
