@@ -3,7 +3,7 @@ import { UncontrolledCarousel } from 'reactstrap';
 import banner1 from './Images/banner1.png'
 import banner2 from './Images/banner2.png'
 import banner3 from './Images/banner3.png'
-import './Banner.css'
+
 const items = [
     {
       src: banner1,

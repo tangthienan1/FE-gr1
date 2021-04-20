@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { Card, Button, CardTitle, CardText, Form, FormGroup, Label, Input, FormText, Col } from 'reactstrap';
-import ApprovedContent from './ApprovedContent';
+import React, { useEffect, useState } from 'react';
+import { Card, FormGroup, Input } from 'reactstrap';
 import ApprovedAPI from '../../api/ApprovedAPI';
 import Pagination from '../../components/Base/include/Pagination/Pagination';
 import SearchBar from '../../components/Base/include/Searchbar';
+import ApprovedContent from './ApprovedContent';
 
 function Approved() {
     const [approved, setApproved] = useState([]);

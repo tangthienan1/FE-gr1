@@ -4,7 +4,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div className="footer-padding">
+        <div className="footer-b">
             <div className="main-footer">
             <div className="col-12">
                     <div className="row align-items-start">
@@ -19,7 +19,7 @@ function Footer() {
                             </ul>
                         </div>
                         <div className="col-sm text-left mx-auto">
-                            <h4>Hồ Chí Minh</h4>
+                            <h4>HỒ CHÍ MINH</h4>
                             <hr />
                             <ul className="list-unstyled">
                             <li>ĐẠI HỌC GREENWICH </li>
@@ -61,7 +61,7 @@ function Footer() {
                         </div>
                     </div>
                     <hr />
-                    <div className="footer-bottom">
+                    <div className="footer-a">
                         <p className="col-sm text-left mx-auto">
                             &copy;{new Date().getFullYear()} CMS Greenwich Magazine System - All Rights Reserved
                     </p>

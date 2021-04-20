@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import img from '../DashBoard/Student/components/img.jpg'
-import { Card, Button, CardTitle, CardText, Form, FormGroup, Label, Input, FormText, Col } from 'reactstrap';
-import Image from 'react-bootstrap/Image'
+import React, { useEffect, useState } from 'react';
+import Image from 'react-bootstrap/Image';
+import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import ProfileAPI from '../../api/profileAPI';
+import img from '../DashBoard/Student/components/img.jpg';
 
 function Profile() {
     const [profile, setProfile] = useState([]);

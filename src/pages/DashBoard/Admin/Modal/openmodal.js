@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import '../admin.css'
+import React from 'react';
 import Modal from "./modal";
 import useModal from './useModal';
 

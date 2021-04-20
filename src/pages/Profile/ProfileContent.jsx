@@ -1,12 +1,7 @@
 import React from 'react';
 import {
     Card,
-    CardBody,
-    CardImg,
-    CardText,
-    CardTitle,
-    Col,
-    Row
+    CardText
 } from 'reactstrap';
 
 const ProfileContent = ({ profiles, loading }) => {
@@ -15,20 +10,6 @@ const ProfileContent = ({ profiles, loading }) => {
     }
 
     return (
-        // <>
-        // <Card>
-        //     {pendings.map(pending => (
-
-        //         <Card className='card' key={pending.id}>
-        //             <div className='card-text-top'>
-        //                 <CardText className='card-title'>{pending.title}</CardText>
-        //                 <CardText className='card-status'>{pending.id}</CardText>
-        //             </div>
-        //             <CardText className='text-center'>With supporting text below as a natural lead-in to additional content.</CardText>
-        //         </Card>
-        // </Row>
-        // </>
-
         <div>
             {profiles.map(profile => (
                 

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Approved from '../../Approved';
 import Pending from '../../Pending';
 import StatisticTab from './Statistic';
-import './tabview.css';
 
 function CoordinatorView() {
 
