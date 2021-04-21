@@ -10,7 +10,6 @@ import ManagerDashboard from './pages/DashBoard/Manager/Overview/ManagerDashboar
 import StudentDashboard from './pages/DashBoard/Student';
 import HomePage from './pages/Homepage';
 import LoginPage from './pages/Login';
-import CreateAccountForm from './pages/DashBoard/Admin/Modal/CreateAccountForm';
 
 
 function App() {
@@ -32,7 +31,6 @@ function App() {
         <Route path={routeConfig.manager['list-url']} component={ManagerDashboard} />
         <Route path={routeConfig.marketing['list-url']} component={ManagerDashboard} />
         <Route path={routeConfig.profile['list-url']} component={ProfilePage} />
-        <Route path={routeConfig.signup['list-url']} component={CreateAccountForm} />
       </Switch>
     </div>
   );

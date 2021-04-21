@@ -9,7 +9,6 @@ function UserAccount() {
         <div>
             <div className="form_cb">
             <SearchBar />
-            <Button href={routeConfig.signup['list-url']}>Create</Button>  
             </div>
             <div className="table">
                 <Datatable/>

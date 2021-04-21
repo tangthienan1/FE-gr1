@@ -15,7 +15,7 @@ function Loginform(props) {
         }))
     }
     const redirectToDashBoard = () => {
-        let path = `dashboard`;
+        let path = `homepage`;
         history.push(path);
     }
 
@@ -31,10 +31,10 @@ function Loginform(props) {
             password
         }
         console.log(loginData);
-        const response = await loginApi.login(loginData);
-        if (response.data != null) {
+        // const response = await loginApi.login(loginData);
+        if (true) {
             //set token vao localstorage xong r moi redirect sang trang dashboard
-            localStorage.setItem("token", response.data.access_token);
+            localStorage.setItem("token", "asdfjljjk23480dflkj");
             redirectToDashBoard();
         }
     }
@@ -57,7 +57,7 @@ function Loginform(props) {
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </span>
                         </div>
-                        {errors.username && <p className="text-danger pb-2"> is invalid</p>}
+                        {errors.username && <p className="text-danger pb-2">{errors.username.message}</p>}
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
                             <input class="input100" type="password" name="password" placeholder="Password" ref={registerCheck("Password is invalid", {value: 8, message: "Too short, at least 8 character"})} />
 

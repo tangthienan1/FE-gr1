@@ -9,7 +9,6 @@ function Session() {
         <>
         <div className="form_cb">
             <SearchBar />
-            <Button href={routeConfig.signup['list-url']}>Create</Button>
         </div>
         <Pagination/>
         </>

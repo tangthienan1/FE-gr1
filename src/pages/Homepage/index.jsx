@@ -34,22 +34,23 @@ const Homepage = () => {
 
     return (
         <>
-        <Base>
-            <div className="padding-b">
-            </div>
-            <Container>
-                <h1 className="text-primary mb-3">Contents</h1>
-                <Row>
-                    <Contents contents={currentContent} loading={loading} key={contents.id} />
-                    <div className="padding-a">
-                        <Pagination contentsPerPage={contentsPerPage} totalContent={contents.length} paginate={paginate} />
-                    </div>
-                </Row>
-            </Container>
-            <div className="padding-a p-4">
-                <Gallery />
-            </div>
-        </Base>
+            <Base>
+                <div className="padding-b">
+                </div>
+                <Container>
+                    <h1 className="text-primary mb-3">Contents</h1>
+                    <Row>
+                        
+                        <Contents contents={currentContent} loading={loading} key={contents.id} />
+                        <div className="padding-a">
+                            <Pagination contentsPerPage={contentsPerPage} totalContent={contents.length} paginate={paginate} />
+                        </div>
+                    </Row>
+                </Container>
+                <div className="padding-a p-4">
+                    <Gallery />
+                </div>
+            </Base>
         </>
     )
 }
